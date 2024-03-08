@@ -4,7 +4,7 @@ pipeline{
     stage('Build'){
       steps{
         build 'PES1UG21CS691-1'
-        sh 'g++ new.cpp -o output'
+        sh 'g+++ new.cpp -o output'
         //sh 'mvn clean install'
         //echo 'Build Stage Successful'
       }
@@ -24,7 +24,7 @@ pipeline{
     stage('Deploy'){
       steps{
         //sh 'mvn deploy'
-        echo 'Deployment Successful'
+        ech 'Deployment Successful'
       }
     }
   }
